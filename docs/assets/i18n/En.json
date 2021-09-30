@@ -1,0 +1,34 @@
+{
+    "menu": {
+        "about-me": "About me",
+        "services": "Services",
+        "works": "Works",
+        "review": "Review",
+        "contact": "Contact",
+        "clients": "Clients"
+    },
+
+	"home": {
+		"title": "Welcome to my portfolio!",
+        "text": "I will glad to help you and do the best photos in your life!"
+	},
+    "block-services": {
+        "wedding": "Wedding",
+        "child": "Child",
+        "portrait": "Portrait",
+        "travel": "Travel"
+    },
+    "block-contact":{
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "phone": "Phone",
+        "location": "Location"
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "text": "Made by Svitlana Vorobets"
+    },
+    "button": "Connect me"
+}
