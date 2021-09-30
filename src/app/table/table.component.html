@@ -1,0 +1,51 @@
+<div class="block-table _container">
+    <h3 class="title">{{ 'menu.clients' | translate }}</h3>
+    <input type="text" [(ngModel)] = 'filteredString' class="client-input" placeholder="Search by name">
+    <div class="scroll-table">
+        <cdk-virtual-scroll-viewport itemSize="150" >
+     <table id="users">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Street</th>
+                <th>Suite</th>
+                <th>City</th>
+                <th>Zipcode</th>
+                <th>Geo(lat)</th>
+                <th>Geo(lng)</th>
+                <th>Phone</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr *cdkVirtualFor="let dt of personData | filter:filteredString">
+                <td> 
+                    <a target="_blank" [routerLink]="['features',dt.id, dt.username]" routerLinkActive="active">{{dt.id}}</a> 
+                </td>
+                <td>
+                    {{dt.name}}
+                </td>
+                <td>{{dt.username}}</td>
+                <td>{{dt.email}}</td>
+                <td>{{dt.address.street}}</td>
+                <td>{{dt.address.suite}}</td>
+                <td>{{dt.address.city}}</td>
+                <td>{{dt.address.zipcode}}</td>
+                <td>{{dt.address.geo.lat}}</td>
+                <td>{{dt.address.geo.lng}}</td>
+                <td>{{dt.phone}}</td>
+                <td>{{dt.website}}</td>
+             
+            </tr>
+
+        
+         </tbody>
+      </table>
+    </cdk-virtual-scroll-viewport>
+</div>
+
+</div>

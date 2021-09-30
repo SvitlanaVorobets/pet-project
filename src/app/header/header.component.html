@@ -1,0 +1,37 @@
+<header>
+    <div class="_container">
+      <nav class="menu">
+        <p class="logo"> 
+          <a [routerLink]="['']" routerLinkActive="active">Portfolio</a>
+        </p>
+        
+        <div>
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="menu_list">
+              <li class="menu_item">{{ 'menu.about-me' | translate }}</li>
+              <li class="menu_item">{{ 'menu.services' | translate }}</li>
+              <li class="menu_item">{{ 'menu.works' | translate }}</li>
+              <li class="menu_item">{{ 'menu.clients' | translate }}</li>
+              <li class="menu_item">{{ 'menu.review' | translate }}</li>
+              <li class="menu_item">{{ 'menu.contact' | translate }}</li>
+              <li class="menu_item">
+                  <select name="language" id="language" class="select-language" (change)="useLang($any($event.target).value)">
+                      <option *ngFor="let item of supportLanguages" [value]="item">{{item}}</option>
+                  </select>
+              </li>
+            </ul>
+        </div>
+        
+        
+     </nav>
+     <div class="header_bottom">
+         <h1 class="header__bottom-title">{{ 'home.title' | translate }}</h1>
+         <p class="header__bottom-text">{{ 'home.text' | translate }}</p>
+         <a href="" class="button">{{ 'button' | translate }}</a>
+     </div>
+   </div>
+     
+  </header>

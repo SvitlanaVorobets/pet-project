@@ -1,0 +1,21 @@
+.footer-text{
+    text-align: end;
+}
+
+footer{
+  color: #fff;
+  background-color: #000;
+  margin-top: 80px;
+}
+.footer__row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media(max-width: 650px){
+    footer{
+        margin-top: 40px;
+    }
+  }
